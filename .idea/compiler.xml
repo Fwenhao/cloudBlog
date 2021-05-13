@@ -8,10 +8,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="iceblog-service-api" />
+        <module name="iceblog-business-account" />
         <module name="iceblog-basecommon" />
-        <module name="iceblog-business" />
+        <module name="iceblog-business-api" />
+        <module name="iceblog-business-article" />
         <module name="iceblog-getaway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="iceblog-business" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="iceblog-basecommon" options="" />
+      <module name="iceblog-business" options="-parameters" />
+      <module name="iceblog-getaway" options="" />
+      <module name="iceblog-service-api" options="" />
+    </option>
   </component>
 </project>

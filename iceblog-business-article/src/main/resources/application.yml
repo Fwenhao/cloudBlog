@@ -1,0 +1,8 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: ICEBLOG-BUSINESS-ARTICLE
+  cloud:
+    nacos:
+      server-addr: localhost:8848

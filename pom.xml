@@ -10,17 +10,12 @@
   <modules>
     <module>iceblog-basecommon</module>
     <module>iceblog-getaway</module>
-    <module>iceblog-business</module>
     <module>iceblog-service-api</module>
+    <module>iceblog-business-account</module>
+    <module>iceblog-business-article</module>
+    <module>iceblog-business-api</module>
   </modules>
   <packaging>pom</packaging>
-
-  <distributionManagement>
-    <site>
-      <id>website</id>
-      <url>scp://webhost.company.com/www/website</url>
-    </site>
-  </distributionManagement>
 
   <properties>
     <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
@@ -28,22 +23,9 @@
     <spring.cloud.alibaba-version>2.2.1.RELEASE</spring.cloud.alibaba-version>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Sonatype Nexus Staging</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-
   <dependencyManagement>
     <dependencies>
+      <!-- 维护SpringCloud版本号 -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
@@ -51,6 +33,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <!-- SpringBoot版本维护 -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
@@ -58,6 +41,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <!-- CloudAlibaba -->
       <dependency>
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
