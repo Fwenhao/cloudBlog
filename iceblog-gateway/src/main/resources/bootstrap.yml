@@ -1,0 +1,14 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: ICEBLOG-GATEWAY
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        prefix: ${spring.application.name}
+        file-extension: yml
+  profiles:
+    active: dev

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ICEBLOG-BUSINESS-ACCOUNT
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        prefix: ${spring.application.name}
+        file-extension: yml
+  profiles:
+    active: dev   #开发环境
+

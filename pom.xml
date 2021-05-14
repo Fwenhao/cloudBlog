@@ -9,11 +9,11 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>iceblog-basecommon</module>
-    <module>iceblog-getaway</module>
     <module>iceblog-service-api</module>
     <module>iceblog-business-account</module>
     <module>iceblog-business-article</module>
     <module>iceblog-business-api</module>
+    <module>iceblog-gateway</module>
   </modules>
   <packaging>pom</packaging>
 

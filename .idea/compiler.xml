@@ -12,11 +12,12 @@
         <module name="iceblog-basecommon" />
         <module name="iceblog-business-api" />
         <module name="iceblog-business-article" />
-        <module name="iceblog-getaway" />
+        <module name="iceblog-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="iceblog-business" target="8" />
+      <module name="iceblog-getaway" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

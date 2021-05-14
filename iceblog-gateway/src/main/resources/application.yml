@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: account_router
+          uri: lb://ICEBLOG-BUSINESS-ACCOUNT
+          predicates:
+            - Path=/account/**
+            -
+        - id: article_router
+            uri: lb://ICEBLOG-BUSINESS-ARTICLE
+            predicates:
+              - Path=/account/**
+              # - After 标识该断言在XXX区域时间过后才生效
+              # - Before 标识该断言在XXX区域时间之前生效，过了则失效
+              # - Between 区域时间范围之内
+              # - Cookie key → value 指定请求携带Cookie 键值对
+              # - Header-X 指定请求头
+              # - Method 指定请求方式
+            fileters:
+
+
