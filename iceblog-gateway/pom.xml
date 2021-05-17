@@ -32,6 +32,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+        <!-- 公共模块 -->
+        <dependency>
+            <groupId>cn.fyyice</groupId>
+            <artifactId>iceblog-basecommon</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>

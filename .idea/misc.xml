@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/iceblog-business-api/pom.xml" />
         <option value="$PROJECT_DIR$/iceblog-getaway/pom.xml" />
       </set>
     </option>

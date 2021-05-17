@@ -8,4 +8,5 @@ package cn.fyyice.constant;
 public class Tips {
     public final static String SUCCESS_MSG = "操作成功";
     public final static String FAIL_MSG = "操作失败";
+    public final static String TOKEN = "token";
 }

@@ -12,7 +12,6 @@
     <module>iceblog-service-api</module>
     <module>iceblog-business-account</module>
     <module>iceblog-business-article</module>
-    <module>iceblog-business-api</module>
     <module>iceblog-gateway</module>
   </modules>
   <packaging>pom</packaging>

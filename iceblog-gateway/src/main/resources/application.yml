@@ -1,6 +1,11 @@
 spring:
   cloud:
     gateway:
+      globalcors:
+        cors-configurations:
+          allowedOrigins: "*"
+          allowedMethods: "*"
+          allowedHeaders: "*"
       routes:
         - id: account_router
           uri: lb://ICEBLOG-BUSINESS-ACCOUNT
@@ -17,6 +22,6 @@ spring:
               # - Cookie key → value 指定请求携带Cookie 键值对
               # - Header-X 指定请求头
               # - Method 指定请求方式
-            fileters:
+            #fileters:
 
 
